@@ -50,15 +50,14 @@ DEFAULT_PACKAGES.nas:=\
 # @brief Default packages for @DEVICE_TYPE router.
 ##
 DEFAULT_PACKAGES.router:=\
-	dnsmasq-full \
-	firewall \
+	dnsmasq \
+	firewall4 \
 	nftables \
 	kmod-nft-offload \
 	odhcp6c \
 	odhcpd-ipv6only \
 	ppp \
-	ppp-mod-pppoe \
-  default-settings-chn \
+	ppp-mod-pppoe
 
 ifneq ($(DUMP),)
   all: dumpinfo
