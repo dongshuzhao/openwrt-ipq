@@ -130,6 +130,21 @@ platform_do_upgrade() {
 		;;
 	tplink,eap610-outdoor)
 		tplink_do_upgrade "$1"
+	cmiot,ax18|\
+	zn,m2|\
+	qihoo,v6|\
+	redmi,ax5|\
+	xiaomi,ax1800|\
+	glinet,gl-axt1800|\
+	glinet,gl-ax1800|\
+	netgear,wax214)
+		nand_do_upgrade "$1"
+		;;
+	redmi,ax5-jdcloud|\
+	jdc,ax1800-pro)
+		kernelname="0:HLOS"
+		rootfsname="rootfs"
+		mmc_do_upgrade "$1"
 		;;
 	yuncore,fap650)
 		[ "$(fw_printenv -n owrt_env_ver 2>/dev/null)" != "7" ] && yuncore_fap650_env_setup

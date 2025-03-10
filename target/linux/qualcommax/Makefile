@@ -18,6 +18,7 @@ DEFAULT_PACKAGES += \
 	wpad-basic-mbedtls uboot-envtools \
 	e2fsprogs kmod-fs-ext4 losetup \
 	kmod-qca-nss-drv kmod-qca-nss-ecm \
-	kmod-qca-nss-drv-bridge-mgr
+	kmod-qca-nss-drv-bridge-mgr \
+	nss-firmware-ipq6018 kmod-qca-mcs kmod-qca-nss-drv-pppoe
 
 $(eval $(call BuildTarget))
