@@ -130,6 +130,7 @@ platform_do_upgrade() {
 		;;
 	tplink,eap610-outdoor)
 		tplink_do_upgrade "$1"
+		;;
 	cmiot,ax18|\
 	zn,m2|\
 	qihoo,v6|\
