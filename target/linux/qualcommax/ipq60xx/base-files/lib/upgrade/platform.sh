@@ -110,8 +110,6 @@ platform_do_upgrade() {
 		fw_setenv bootcount 0
 		nand_do_upgrade "$1"
 		;;
-	glinet,gl-ax1800|\
-	glinet,gl-axt1800|\
 	netgear,wax214|\
 	netgear,wax610|\
 	netgear,wax610y|\
@@ -142,7 +140,6 @@ platform_do_upgrade() {
 	qihoo,v6|\
 	redmi,ax5|\
 	xiaomi,ax1800|\
-	glinet,gl-ax1800|\
 	netgear,wax214)
 		nand_do_upgrade "$1"
 		;;

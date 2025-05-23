@@ -40,17 +40,14 @@ ALLWIFIBOARDS:= \
 	edgecore_eap102 \
 	edimax_cax1800 \
 	elecom_wrc-x3000gs2 \
-	glinet_gl-ax1800 \
-	glinet_gl-axt1800 \
 	glinet_gl-b3000 \
+	jdc_ax1800-pro \
 	linksys_homewrk \
 	linksys_mr5500 \
 	linksys_mr7350 \
 	linksys_mr7500 \
 	linksys_mx2000 \
 	linksys_mx4200 \
-	glinet_gl-ax1800 \
-	jdc_ax1800-pro \
 	linksys_mx5300 \
 	linksys_mx5500 \
 	linksys_mx8500 \
@@ -68,9 +65,9 @@ ALLWIFIBOARDS:= \
 	prpl_haze \
 	qihoo_360v6 \
 	qnap_301w \
-  qihoo_v6 \
-  redmi_ax5 \
-  redmi_ax5-jdcloud \
+	qihoo_v6 \
+	redmi_ax5 \
+	redmi_ax5-jdcloud \
 	redmi_ax6 \
 	skspruce_wia3300-20 \
 	spectrum_sax1v1k \
@@ -80,14 +77,14 @@ ALLWIFIBOARDS:= \
 	tplink_eap623od-hd-v1 \
 	tplink_eap660hd-v1 \
 	wallys_dr40x9 \
-  xiaomi_ax1800 \
+	xiaomi_ax1800 \
 	xiaomi_ax3600 \
 	xiaomi_ax9000 \
 	yyets_le1 \
 	yuncore_ax880 \
-  zn_m2 \
 	yuncore_fap650 \
 	zbtlink_zbt-z800ax \
+	zn_m2 \
 	zte_mf269 \
 	zte_mf286ar\
 	zte_mf286c \
@@ -200,7 +197,6 @@ $(eval $(call generate-ipq-wifi-package,dynalink_dl-wrx36,Dynalink DL-WRX36))
 $(eval $(call generate-ipq-wifi-package,edgecore_eap102,Edgecore EAP102))
 $(eval $(call generate-ipq-wifi-package,edimax_cax1800,Edimax CAX1800))
 $(eval $(call generate-ipq-wifi-package,elecom_wrc-x3000gs2,ELECOM WRC-X3000GS2))
-$(eval $(call generate-ipq-wifi-package,glinet_gl-ax1800,GL.iNet GL-AX1800))
 $(eval $(call generate-ipq-wifi-package,glinet_gl-axt1800,GL.iNet GL-AXT1800))
 $(eval $(call generate-ipq-wifi-package,glinet_gl-b3000,GL.iNet GL-B3000))
 $(eval $(call generate-ipq-wifi-package,linksys_homewrk,Linksys HomeWRK))
@@ -208,8 +204,6 @@ $(eval $(call generate-ipq-wifi-package,linksys_mr5500,Linksys MR5500))
 $(eval $(call generate-ipq-wifi-package,linksys_mr7350,Linksys MR7350))
 $(eval $(call generate-ipq-wifi-package,linksys_mr7500,Linksys MR7500))
 $(eval $(call generate-ipq-wifi-package,linksys_mx2000,Linksys MX2000))
-$(eval $(call generate-ipq-wifi-package,glinet_gl-ax1800,GL.iNet GL-AX1800))
-#$(eval $(call generate-ipq-wifi-package,glinet_gl-axt1800,GL.iNet GL-AXT1800))
 $(eval $(call generate-ipq-wifi-package,jdc_ax1800-pro,JD Cloud AX1800 Pro))
 $(eval $(call generate-ipq-wifi-package,linksys_mx4200,Linksys MX4200))
 $(eval $(call generate-ipq-wifi-package,linksys_mx5300,Linksys MX5300))
