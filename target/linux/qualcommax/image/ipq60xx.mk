@@ -74,21 +74,6 @@ define Device/EmmcImage
 	IMAGE/sysupgrade.bin/squashfs := append-rootfs | pad-to 64k | sysupgrade-tar rootfs=$$$$@ | append-metadata
 endef
 
-define Device/jdc_ax1800-pro
-	$(call Device/FitImage)
-	$(call Device/EmmcImage)
-	DEVICE_VENDOR := JD Cloud
-	DEVICE_MODEL := JDC AX1800 Pro
-	DEVICE_DTS_CONFIG := config@cp03-c2
-	DEVICE_DTS := ipq6018-jdc-ax1800-pro
-	SOC := ipq6018
-	DEVICE_PACKAGES := ipq-wifi-jdc_ax1800-pro kmod-fs-ext4 mkf2fs f2fsck kmod-fs-f2fs
-	BLOCKSIZE := 64k
-	KERNEL_SIZE := 6144k
-	IMAGE/factory.bin := append-kernel | pad-to $${KERNEL_SIZE}  |  append-rootfs | append-metadata
-endef
-TARGET_DEVICES += jdc_ax1800-pro
-
 define Device/linksys_mr7500
 	$(call Device/linksys_mr)
 	DEVICE_MODEL := MR7500
@@ -182,20 +167,6 @@ define Device/redmi_ax5
 	DEVICE_PACKAGES := ipq-wifi-redmi_ax5
 endef
 TARGET_DEVICES += redmi_ax5
-
-define Device/redmi_ax5-jdcloud
-	$(call Device/FitImage)
-	$(call Device/EmmcImage)
-	DEVICE_VENDOR := Redmi
-	DEVICE_MODEL := AX5 JDCloud
-	DEVICE_DTS_CONFIG := config@cp03-c1
-	SOC := ipq6018
-	DEVICE_PACKAGES := ipq-wifi-redmi_ax5-jdcloud
-	#BLOCKSIZE := 64k
-	KERNEL_SIZE := 6144k
-	IMAGE/factory.bin := append-kernel | pad-to $$(KERNEL_SIZE) | append-rootfs | append-metadata
-endef
-TARGET_DEVICES += redmi_ax5-jdcloud
 
 define Device/xiaomi_ax1800
 	$(call Device/FitImage)
